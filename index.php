@@ -61,8 +61,8 @@ if (isset($firstform)) {
       /*
       * Überprufung der Felder
       */
-	      $wert->name('name')->value($_POST['name'])->pattern('words');
-	      $wert->name('strasse')->value($_POST['strasse'])->pattern('words');
+	      $wert->name('name')->value($_POST['name'])->pattern('text');
+	      $wert->name('strasse')->value($_POST['strasse'])->pattern('text');
 	      $wert->name('nr')->value($_POST['nr'])->pattern('int');
 	      $wert->name('plz')->value($_POST['plz'])->pattern('plz');
 	      $wert->name('stadt')->value($_POST['stadt'])->pattern('text');
